@@ -121,15 +121,15 @@ h1{
     font-weight: 650;
     font-size: 3rem;
     margin: 1rem 0;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
 }
 
 h2{
-    font-family: poppins, Arial, Helvetica,;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 550;
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: red;
 }
 
 p{
@@ -137,6 +137,6 @@ p{
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: red;
 }
 }

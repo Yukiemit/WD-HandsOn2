@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif; /* Changed font-family to Arial */
+}
+
+img.img-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 10vh;
+    z-index: -1;
+}
+
+header.hero-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: red; /* Changed background color to red */
+    opacity: 90%;
+    text-shadow: 6px 3px 2px rgba(89,89,89,0.63);
+    font-family: 'header', sans-serif; /* Added font-family for header type of font */
+    font-style: italic; /* Added font-style to make it italic */
+
+    & > a{
+        text-decoration: none;
+        color: rgb(0, 0, 0); /* Changed font color to white */
+        padding: 1rem;
+        font-weight: 1000;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: white;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%; /* Added border-radius to make it a circle */
+        }
+    }
+    & > a.highlight{
+        color: white;
+        background-color: rgb(0, 0, 0);
+        padding: 1rem;
+        font-weight: 1000;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%; /* Added border-radius to make it a circle */
+        }
+    }
+}
+
+section.hero{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    & > img.harry{
+        width: auto;
+        height: auto;
+        max-width: 20rem;
+        max-height: 30rem; /* Changed max-height to 30rem for rectangle shape */
+        border-radius: 0; /* Removed border-radius to make it a rectangle */
+        border: 2px solid red;
+        margin-bottom: 1rem;
+    }
+
+    & > nav.info{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        max-width: 46%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50px 50px 50px 50px;
+-webkit-border-radius: 50px 50px 50px 50px;
+-moz-border-radius: 50px 50px 50px 50px;
+border: 9px solid #5c5b5b;
+gap: 0.5rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+& > h2{
+    font-size: 2rem;
+    color: rgb(255, 0, 0); /* Changed font color to red */
+    font-weight: 800;
+    font-family: 'Bangers', cursive; /* Added superhero font style */
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+    & > p{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-family: 'Satisfy', cursive; /* Changed font-family to Satisfy */
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+        text-align: left;
+    }
+    }
+}
