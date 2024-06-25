@@ -6,20 +6,26 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #1a1a1a;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('background.jpg'); /* Add your own background image */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .navbar {
     width: 100%;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .navbar a {
@@ -35,12 +41,12 @@ body {
 }
 
 .hero-card {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     overflow: hidden;
     width: 90%;
     max-width: 1000px;
-    margin: 20px;
+    margin: 100px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
@@ -63,32 +69,15 @@ body {
     padding: 20px;
     text-align: center;
 }
-    .hero-title {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-weight: bold;
-        color: red;
-    }
 
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #e60000;
+}
 
 .hero-description {
     font-size: 1.2em;
     margin-bottom: 20px;
-        font-family: 'Pacifico', cursive;
-    }
-
-.hero-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: white;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.hero-button:hover {
-    background-color: #0056b3;
+    color: #ddd;
 }
