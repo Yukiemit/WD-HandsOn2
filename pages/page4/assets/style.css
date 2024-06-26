@@ -16,7 +16,7 @@ body {
 
 .navbar {
     width: 100%;
-    background-color: transparent;
+    background-color: #333;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -37,6 +37,7 @@ body {
 
 .navbar a:hover, .navbar a.active {
     background-color: #575757;
+    color: #fff;
 }
 
 .hero-section {
@@ -97,7 +98,7 @@ body {
 }
 
 .hero-button.secondary:hover {
-    background-color: #5a6268;
+    background-color: #685a5a;
 }
 
 .hero-description {
