@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+.navbar {
+    background-color: #006064;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: #004d40;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card {
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero-text p {
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #006064;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#hero1 .hero-card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#hero2 .hero-card {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+#hero3 .hero-card {
+    animation: slideInRight 1s ease-in-out;
+}
+
+#hero4 .hero-card {
+    animation: bounceIn 1s ease-in-out;
+}
+
+#hero5 .hero-card {
+    animation: fadeIn 1s ease-in-out;
+}
